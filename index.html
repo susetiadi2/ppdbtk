@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f6f9;
+      flex-direction: column;
+    }
+
+    .loader {
+      border: 6px solid #eee;
+      border-top: 6px solid #4CAF50;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #333;
+      font-weight: normal;
+    }
+  </style>
+
   <script>
-    window.location.href = "https://script.google.com/macros/s/AKfycbwGROXNklEChJAzdyqhwX5Gh_TymgUEoIp0pL1Yok2ioYAqBVb5Hx9M2EOWdqbryPfD/exec";
+    setTimeout(function(){
+      window.location.href = "https://script.google.com/macros/s/AKfycbwGROXNklEChJAzdyqhwX5Gh_TymgUEoIp0pL1Yok2ioYAqBVb5Hx9M2EOWdqbryPfD/exec?=idTK-A77CA4D6";
+    }, 1500);
   </script>
 </head>
+
 <body>
+  <div class="loader"></div>
+  <h2>Memuat Aplikasi PPDB TK...</h2>
 </body>
 </html>
